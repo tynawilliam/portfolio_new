@@ -1,0 +1,74 @@
+.typewriter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  overflow: hidden;
+  border-right: 0.15em solid #df6c4f;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 2.75s steps(30) forwards, blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 16%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .typewriter {
+    font-size: 1.5rem;
+    width: 100%;
+    animation: typing 2.75s steps(30) forwards,
+      blink-caret 0.5s step-end infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 55%;
+    }
+  }
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #df6c4f;
+    }
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .typewriter {
+    font-size: 1.75rem;
+    width: 100%;
+    animation: typing 2.75s steps(30) forwards,
+      blink-caret 0.5s step-end infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 30%;
+    }
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #df6c4f;
+  }
+}
